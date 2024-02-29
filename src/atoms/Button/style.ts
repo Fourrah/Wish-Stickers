@@ -6,6 +6,7 @@ export const Button = styled.div`
   background-color: #D1C4E9;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer; 
   
   &:hover {
     background-color: #B39DDB;

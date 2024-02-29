@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-export const StickerBox = styled.div`
+export const CouponBox = styled.div`
   width: 500px;
-  // height: 700px;
   min-height: 150px;
-  max-height: 700px;
-  background-color: #EDE7F6; 
+  max-height: 500px;
+  background-color: #9575CD; 
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top:30px;
 `;
 
 export const Header = styled.div`
@@ -20,19 +20,12 @@ export const Header = styled.div`
 `
 
 export const Content = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
   margin-left: 20px;
+  padding: 10px;
 `
-
-export const StickerSection = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-`;
-
 
 export const StickerImage = styled.div`
  width: 30px;
@@ -42,22 +35,6 @@ export const StickerImage = styled.div`
  margin-right: 15px;
  margin-top: 10px;
 `
-
-export const ReasonSection = styled.div`
-  width: 400px;
-  height: 30px;
-  background-color: #D1C4E9;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  border-radius: 5px;
-`;
-
-export const ReasonText = styled.span`
-  font-size: 14px; 
-  color: #333;
-  font-weight: 500;
-`;
 
 export const Bottom = styled.div`
   width: 100%;

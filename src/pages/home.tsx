@@ -1,4 +1,5 @@
 import { Title } from "../atoms";
+import CouponContainer from "../organisms/Container/CouponContainer";
 import StickerContainer from "../organisms/Container/StickerContainer";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Title text={title}/>
       <StickerContainer/>
+      <CouponContainer/>
     </>
     
   )

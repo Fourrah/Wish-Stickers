@@ -3,10 +3,10 @@ import * as S from './style'
 
 const StickerContainer = () => {
   return (
-    <S.StickWrapper>
+    <S.StickerWrapper>
       <StickerBox text="Will"/>
       <StickerBox text="Sara"/>
-    </S.StickWrapper>
+    </S.StickerWrapper>
     
   )
 }
