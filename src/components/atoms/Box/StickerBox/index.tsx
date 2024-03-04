@@ -12,7 +12,7 @@ interface Sticker {
   reason: string;
 }
 
-const StickerBox = ({ text }: StickerBoxProps) => {
+const StickerBox: React.FC<StickerBoxProps> = ({ text }) => {
   const [stickers, setStickers] = useState<Sticker[]>([]);
   const [showPopup, setShowPopup] = useState(false); // 팝업 표시 여부를 위한 상태
 
@@ -44,8 +44,8 @@ const StickerBox = ({ text }: StickerBoxProps) => {
         <Button text="clear" onClick={handleClearButtonClick}/>
       </S.Header>
       <S.Content>
-        {stickers.map((sticker) => (
-          <React.Fragment key={sticker.id}>
+        {stickers.map((sticker, index) => (
+          <React.Fragment key={index}>
             <S.StickerSection>
               <S.StickerImage />
               <S.ReasonSection>

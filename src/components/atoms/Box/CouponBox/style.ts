@@ -10,6 +10,7 @@ export const CouponBox = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-top:30px;
+  margin-bottom: 30px;
 `;
 
 export const Header = styled.div`
